@@ -3,8 +3,7 @@
 
 'use strict';
 
-//TODO: Fix this reference to refer the layers. 
-const logManager = require('log-manager.js');
+const logManager = require('/opt/nodejs/log-manager.js');
 
 const dal = require('./order-manager-dal.js');
 

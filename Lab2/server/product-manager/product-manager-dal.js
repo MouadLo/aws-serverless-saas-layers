@@ -3,8 +3,7 @@
 
 'use strict';
 
-//TODO: Fix this reference to refer the layers. 
-const logManager = require('log-manager.js');
+const logManager = require('/opt/nodejs/log-manager.js');
 
 const helper = require('/opt/nodejs/helper.js');
 const doc = require('dynamodb-doc');

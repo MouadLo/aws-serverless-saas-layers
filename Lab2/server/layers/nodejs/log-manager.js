@@ -3,7 +3,7 @@
 
 'use strict';
 const helper = require('./helper.js');
-//TODO: Add reference of token manager
+const tokenManager = require('./token-manager.js');
 
 //Log a message with no tenant context
 module.exports.log = function(event, eventSource, message) {
@@ -11,7 +11,10 @@ module.exports.log = function(event, eventSource, message) {
     console.log(JSON.stringify(message));
     
     //TODO: Extract Tenant ID from JWT using token Manager and add to the message
-
+    //Extract and Add tenant id to the log message
+    const tenantId = tokenManager.getTenantId(event);
+    message.tenantId = tenantId;
+    
     const currentTime = Date.now()
     const key = eventSource + '/' + currentTime;
     message.timestamp = (new Date()).toISOString().substr(0, 19).replace('T',' ');

@@ -24,7 +24,7 @@ Resources:
           Properties:
             Path: /product/{resourceId}
             Method: get
-      CodeUri: s3://serverless-saas-layers1580501283/92d7d8757a75f9d2d915fd9467f4cd85
+      CodeUri: s3://serverless-saas-layers1582656455/6dcb4bff79fcb9f4e0d24dd6e69616a9
   ProductPutFunction:
     Type: AWS::Serverless::Function
     Properties:
@@ -47,7 +47,7 @@ Resources:
           Properties:
             Path: /product/{resourceId}
             Method: put
-      CodeUri: s3://serverless-saas-layers1580501283/92d7d8757a75f9d2d915fd9467f4cd85
+      CodeUri: s3://serverless-saas-layers1582656455/6dcb4bff79fcb9f4e0d24dd6e69616a9
   ProductDeleteFunction:
     Type: AWS::Serverless::Function
     Properties:
@@ -70,7 +70,7 @@ Resources:
           Properties:
             Path: /product/{resourceId}
             Method: delete
-      CodeUri: s3://serverless-saas-layers1580501283/92d7d8757a75f9d2d915fd9467f4cd85
+      CodeUri: s3://serverless-saas-layers1582656455/6dcb4bff79fcb9f4e0d24dd6e69616a9
   OrderGetFunction:
     Type: AWS::Serverless::Function
     Properties:
@@ -93,7 +93,7 @@ Resources:
           Properties:
             Path: /order/{resourceId}
             Method: get
-      CodeUri: s3://serverless-saas-layers1580501283/92d7d8757a75f9d2d915fd9467f4cd85
+      CodeUri: s3://serverless-saas-layers1582656455/6dcb4bff79fcb9f4e0d24dd6e69616a9
   OrderPutFunction:
     Type: AWS::Serverless::Function
     Properties:
@@ -116,7 +116,7 @@ Resources:
           Properties:
             Path: /order/{resourceId}
             Method: put
-      CodeUri: s3://serverless-saas-layers1580501283/92d7d8757a75f9d2d915fd9467f4cd85
+      CodeUri: s3://serverless-saas-layers1582656455/6dcb4bff79fcb9f4e0d24dd6e69616a9
   OrderDeleteFunction:
     Type: AWS::Serverless::Function
     Properties:
@@ -139,4 +139,4 @@ Resources:
           Properties:
             Path: /order/{resourceId}
             Method: delete
-      CodeUri: s3://serverless-saas-layers1580501283/92d7d8757a75f9d2d915fd9467f4cd85
+      CodeUri: s3://serverless-saas-layers1582656455/6dcb4bff79fcb9f4e0d24dd6e69616a9
